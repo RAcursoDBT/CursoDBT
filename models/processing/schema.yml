@@ -1,0 +1,14 @@
+models:
+  - name: models/processing/psg_montly_sales_make.sql
+    description: "Modelo que agrupa las ventas mensuales por marca y vendedor"
+    columns:
+      - name: DDATE
+        description: "Contiene el primer día de cada mes"
+      - name: SALESPERSON
+        description: "Nombre vendedor"
+      - name: CARMAKE
+        description: "Marca coche"
+      - name: TOTALSALE
+        description: "Total venta neta mes/vendedor/marca"
+      - name: TOTALCOM
+        description: "Total comisión venta mes/vendedor/marca"
