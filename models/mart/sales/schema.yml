@@ -13,6 +13,10 @@ models:
         description: "Nombre de la marca"
         tests:
           - not_null
+          - accepted_values: #Tienen que estar estas marcas sino daremos un warning
+              values: ['Toyota', 'Honda', 'Ford', 'Chevrolet', 'Audi']
+              config:
+                severity: warn
 
   - name: dim_salesperson #Dimensión de vendedores
     description: "Dimensión de vendedores de coches. Contiene una clave única por vendedor."
