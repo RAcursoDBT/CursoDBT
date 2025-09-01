@@ -28,3 +28,21 @@ sources:
             description: "% comisión del vendedor"
           - name: COMMISSIONEARNED
             description: "Valor de la comisión del vendedor"
+
+     #tabla para snapshot
+      - name: SALESPERSON
+        description: 'tabla de vendedores'
+        columns:
+          - name: SALESPERSON_ID
+            description: 'id único y clave primaria'
+          - name: SALESPERSON_NAME
+            description: 'nombre vendedor, no nulo'
+          - name: COMMISSION_RATE
+            description: tasa de comision, dos decimales (999,99)
+          - name: store_id
+            description: id de la tienda asociada
+          - name: STATUS
+            description: 'estado: activo/inactivo'
+          - name: LAST_UPDATE_TS
+            description: 'marca de tiempo última actualización (sin zona horaria)'
+
