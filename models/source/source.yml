@@ -45,4 +45,53 @@ sources:
             description: 'estado: activo/inactivo'
           - name: LAST_UPDATE_TS
             description: 'marca de tiempo última actualización (sin zona horaria)'
+      - name: MARKETING_PIVOTED_PERFORMANCE
+        description: 'Tabla de marketing'
+        columns:
+          - name: CAMPAIGN_ID
+            description: 'Identificador de campaña'
+          - name: REPORT_DATE
+            description: 'Fecha del informe'
+          - name: CHANNEL_NAME
+            description: 'Nombre canal'
+          - name: METRIC_NAME
+            description: 'Nombre de la métrica'
+          - name: METRIC_VALUE
+            description: 'Valor métrica'
+      - name: REGIONAL_SALES_APAC
+        description: 'Ventas regionales APAC'
+        columns:
+          - name: ORDER_ID
+          - name: ORDER_DATE
+          - name: CUSTOMER_ID
+          - name: PRODUCT_ID
+          - name: QUANTITY
+          - name: UNIT_PRICE
+          - name: TOTAL_AMOUNT
+          - name: COUNTRY_CODE_NA
+          - name: IMPORT_DUTY_APAC
+      - name: REGIONAL_SALES_EU
+        description: 'Ventas regionales EU'
+        columns:
+          - name: ORDER_ID
+          - name: ORDER_DATE
+          - name: CUSTOMER_ID
+          - name: PRODUCT_ID
+          - name: QUANTITY
+          - name: UNIT_PRICE
+          - name: TOTAL_AMOUNT
+          - name: COUNTRY_CODE_NA
+          - name: SALES_TAX_RATE_NA
+      - name: REGIONAL_SALES_NA
+        description: 'Ventas regionales NA'
+        columns:
+          - name: ORDER_ID
+          - name: ORDER_DATE
+          - name: CUSTOMER_ID
+          - name: PRODUCT_ID
+          - name: QUANTITY
+          - name: UNIT_PRICE
+          - name: TOTAL_AMOUNT
+          - name: COUNTRY_CODE_NA
+          - name: SALES_TAX_RATE_NA
 
