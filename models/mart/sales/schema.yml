@@ -32,7 +32,7 @@ models:
           - not_null   
 
   - name: fct_montly_sales.sql #Tabla de hechos
-    description: "Dimensión de marcas de coches. Contiene una clave única por marca."
+    description: "{{ doc('fct_montly_sales') }}"
     columns:
       - name: DDATE #Asumiendo que es el mes
         description: "Fecha"
