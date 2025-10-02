@@ -1,0 +1,46 @@
+version: 2
+
+models:
+  - name: fct_riesgos_ciudad_cliente.sql #Tabla de hechos
+    description: "Tabla agregada de riesgos por ciudad, año y mes"
+    columns:
+      - name: CIUDAD 
+        description: "Ciudad donde se produce el riesgo"
+        tests:
+          - not_null
+      - name: MES
+        description: "Mes del riesgo"
+        tests:
+          - not_null
+      - name: ANYO
+        description: "Año del riesgo"
+        tests:
+          - not_null    
+      - name: RIESGO_PROMEDIO
+        description: "Promedio por ciudads,mes y año"
+      - name: TOTAL_CLIENTES
+        description: "Total clientes afectados por ciudad,mes y año"
+
+  - name: fct_riesgos_total_vs_temperatura_media.sql #Tabla de hechos
+    description: "Tabla agregada de temperatura media por ciudads"
+    columns:
+      - name: CLIENTE_ID 
+        description: "Ciudad donde se produce el riesgo"
+        tests:
+          - not_null
+      - name: EDAD
+        description: "Mes del riesgo"
+        tests:
+          - not_null
+      - name: CIUDAD
+        description: "Ciudad donde se produce el riesgo"
+        tests:
+          - not_null
+      - name: TEMP_MEDIA
+        description: "Temperatura media"
+      - name: RIESGO_TOTAL
+        description: "% riesgo"
+      - name: SINIESTRO
+        description: "Se produce siniestro (1/0)"
+      - name: VALOR_TOTAL
+        description: "Total bienes asegurados"

@@ -94,4 +94,58 @@ sources:
           - name: TOTAL_AMOUNT
           - name: COUNTRY_CODE_NA
           - name: SALES_TAX_RATE_NA
-
+          
+#BBDD para seguros y clima  
+          
+  - name: raw_cli_clima
+    database: seguros_clima
+    schema: innolab
+    tables:
+      - name: clientes
+        description: "Tabla con datos de clientes por ciudad, año y mes"
+        columns:
+          - name: cliente_id
+            description: "Identificador del cliente"
+          - name: tipo_seguro
+            description: "Tipo de seguro contratado"
+          - name: zona
+            description: "Zona geográfica del cliente"
+          - name: edad
+            description: "Edad del cliente"
+          - name: valor_propiedad
+            description: "Valor estimado de la propiedad"
+          - name: valor_auto
+            description: "Valor estimado del vehículo"
+          - name: siniestro
+            description: "Indicador de siniestro (1 = sí, 0 = no)"
+          - name: valor_total
+            description: "Valor total asegurado"
+          - name: ciudad
+            description: "Ciudad del cliente"
+          - name: mes
+            description: "Mes del registro"
+          - name: anyo
+            description: "Año del registro"
+          - name: fecha
+            description: "Fecha"
+      - name: riesgos_climaticos
+        description: "Tabla con riesgos climáticos por ciudad, año y mes"
+        columns:
+          - name: ciudad
+            description: "Ciudad donde se produce el fenómeto climático"
+          - name: mes
+            description: "Mes del riesgo climático"
+          - name: anyo
+            description: "Año del riesgo climático"
+          - name: temp_media
+            description: "Temperatura media"
+          - name: precipitacion_mm
+            description: "Precipitación lluvia"
+          - name: eventos_extremos
+            description: "Nº enventos meteorológicos ocurridos"
+          - name: riesgo_climatico
+            description: "Valor del riesgo climático ocurrido"
+          - name: riesgo_total
+            description: "Porcentaje del riesgo climático"
+          - name: fecha
+            description: "Fecha del fenómeno ocurrido"

@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: dim_carmake #Dimensión de marca
-    description: "Dimensión de marcas de coches. Contiene una clave única por marca."
+    description: "Tabla de Dimensión de marcas de coches"
     columns:
       - name: ID_CARMAKE
         description: "Clave única por marca del coche"
@@ -19,7 +19,7 @@ models:
                 severity: warn
 
   - name: dim_salesperson #Dimensión de vendedores
-    description: "Dimensión de vendedores de coches. Contiene una clave única por vendedor."
+    description: "Tabla de Dimensión de vendedores de coches"
     columns:
       - name: ID_SALESPERSON
         description: "Clave subrogada única por vendedor"

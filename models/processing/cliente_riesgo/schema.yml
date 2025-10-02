@@ -1,0 +1,17 @@
+models:
+  - name: models/processing/cliente_riesgo/psg_clientes_riesgo.sql
+    description: "Modelo que agrupa las ventas mensuales por marca y vendedor"
+    columns:
+      - name: CIUDAD
+        description: "Ciudad"
+      - name: MES
+        description: "Mes del riesgo"
+      - name: ANYO
+        description: "Año del riesgo"
+      - name: MES_NUM
+        description: "Mes numerico"
+      - name: riesgo_promedio
+        description: "Promedio riesgo por ciudad, año y mes"
+      - name: total_clientes
+        description: "Total clientes por ciudad, año y mes"
+      
